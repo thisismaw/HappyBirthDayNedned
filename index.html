@@ -5,15 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 21th Birthday Denden</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-    <div class="item">box</div>
-    <div class="item">box</div>
-    <div class="item">box</div>
-    <div class="item">box</div>
-    <div class="item">box</div>
+    <header>
+        <nav>
+            <ul>
+             <li>Home</li>
+             <li>Greetings</li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+    <div class="block">
+        <h1>Hello M</h1>
+    </div>
+    <div class="block block1">
+        <h1>Happy</h1>
+    </div>
+    <div class="block block2">
+        <h1>21th</h1>
+    </div>
+    <div class="block block3">
+        <h1>Birthday</h1>
+    </div>
+    <div class="block block1">
+        <h1>Happy</h1>
+    </div>
+    <div class="block block2">
+        <h1>21th</h1>
+    </div>
+    <div class="block block3">
+        <h1>Birthday</h1>
+    </div>
+    <div class="block block11">
+        <h1>Dennise!</h1>
+    </div>
 </div>
-      
+<script src="index.js"></script>
+<script>
+    var blocks = document.getElementsByClassName("block");
+    var container = document.getElementsByClassName("container");
+    var hs = new HorizontalScroll.default({
+        blocks: blocks,
+        container: container,
+        isAnimated: true,
+        springEffect: 0.8,
+    });
+</script>
 </body>
 </html>
