@@ -31,8 +31,8 @@ html, body {
           filter: grayscale(0%);
   -webkit-transition: .5s all;
   transition: .5s all;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 header {
@@ -67,7 +67,8 @@ header nav li {
 }
 
 .container {
-  margin-top: 200px;
+  max-width: 100%;
+  margin-top: 300px;
   margin-left: 200px;
 }
 
