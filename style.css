@@ -9,17 +9,17 @@ html, body {
 
 .block {
   position: relative;
-  width: 700px;
-  height: 600px;
+  width: 900px;
+  height: 700px;
   margin: 10px 600px 20px 80px;
   -webkit-transition: .5s all;
   transition: .5s all;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  color: white;
 }
 
 .block h1 {
-  color: white;
   background: transparent;
   position: absolute;
   font-size: 65px;
@@ -27,12 +27,23 @@ html, body {
 }
 
 .block:hover {
+  color: gray;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   -webkit-transition: .5s all;
   transition: .5s all;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.block1 h1, .block3 h1 {
+  top: 800px;
+  left: 200px;
+}
+
+.block2 h1, .block4 h1 {
+  bottom: 800px;
+  left: 200px;
 }
 
 header {
@@ -95,7 +106,7 @@ header nav li {
   opacity: 0;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   background: black;
   color: white;

@@ -11,22 +11,36 @@ html,body {
 .block {
 
   position: relative;
-  width: 700px;
-  height: 600px;
+  width: 900px;
+  height: 700px;
   margin: 10px 600px 20px 80px;
   transition: .5s all;
   filter: grayscale(100%);
+  color:white;
   h1 {
-    color:white;
+
     background: transparent;
     position: absolute;
     font-size: 65px;
     font-family: 'Syncopate', sans-serif;
   }
   &:hover {
-    filter:grayscale(0%);
+    color:gray;
+      filter:grayscale(0%);
     transition: .5s all;
     transform: scale(1.05);
+  }
+}
+.block1 , .block3 {
+  h1 {
+    top:800px;
+    left:200px;
+  }
+}
+.block2 , .block4 {
+  h1 {
+    bottom:800px;
+    left:200px;
   }
 }
 header{
@@ -77,14 +91,14 @@ nav{
    font-family: 'Syncopate', sans-serif;
 }
 
-.splash.display-none {
+.splash.display-none {  
   transition: 0.5s all  ;
   font-size:60px;
    position:fixed;
    opacity:0;
    top:0;
    left:0;
-   width:100%;
+   max-width:100%;
    height:100vh;
    background:black;
    color:white;
@@ -104,3 +118,4 @@ nav{
 opacity: 0;
 animation: fadeIn 1s ease-in forwards;
 }
+
