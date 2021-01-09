@@ -4,10 +4,9 @@ html,body {
   padding:0;
   width:100%;
   height:100%;
-  background:$primaryColor;
   overflow: hidden;
+  background: $primaryColor;
 }
-
 .block {
 
   position: relative;
@@ -37,10 +36,15 @@ html,body {
     left:200px;
   }
 }
-.block2 , .block4 {
+.block:nth-child(even){
   h1 {
     bottom:800px;
     left:200px;
+  }
+  &:hover {
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: none;
   }
 }
 header{
@@ -118,4 +122,3 @@ nav{
 opacity: 0;
 animation: fadeIn 1s ease-in forwards;
 }
-
