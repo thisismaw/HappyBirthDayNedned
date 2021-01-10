@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #f4a261;
+  background: black;
 }
 
 .block {
@@ -36,20 +36,22 @@ html, body {
           transform: scale(1.05);
 }
 
-.block1 h1, .block3 h1 {
-  top: 800px;
-  left: 200px;
-}
-
 .block:nth-child(even) h1 {
   bottom: 800px;
-  left: 200px;
+  left: 20px;
 }
 
 .block:nth-child(even):hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
   color: transparent;
   -webkit-text-stroke: 1px white;
   text-shadow: none;
+}
+
+.block:nth-child(odd) h1 {
+  top: 800px;
+  right: 20px;
 }
 
 header {
@@ -90,23 +92,27 @@ header nav li {
 }
 
 .splash {
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
   font-size: 60px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: pink;
   color: white;
   z-index: 200;
   text-align: center;
   line-height: 90vh;
   font-family: 'Syncopate', sans-serif;
+  background: url(denden1.JPG) no-repeat 50% 50%;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
 }
 
 .splash.display-none {
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
   font-size: 60px;
   position: fixed;
   opacity: 0;
@@ -119,7 +125,6 @@ header nav li {
   z-index: -10;
   text-align: center;
   line-height: 90vh;
-  font-family: 'Syncopate', sans-serif;
 }
 
 @-webkit-keyframes fadeIn {

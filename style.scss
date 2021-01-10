@@ -5,7 +5,7 @@ html,body {
   width:100%;
   height:100%;
   overflow: hidden;
-  background: $primaryColor;
+  background: black;
 }
 .block {
 
@@ -17,7 +17,6 @@ html,body {
   filter: grayscale(100%);
   color:white;
   h1 {
-
     background: transparent;
     position: absolute;
     font-size: 65px;
@@ -25,26 +24,28 @@ html,body {
   }
   &:hover {
     color:gray;
-      filter:grayscale(0%);
+    filter:grayscale(0%);
     transition: .5s all;
     transform: scale(1.05);
   }
 }
-.block1 , .block3 {
-  h1 {
-    top:800px;
-    left:200px;
-  }
-}
+
 .block:nth-child(even){
   h1 {
     bottom:800px;
-    left:200px;
+    left:20px;
   }
   &:hover {
+    transition: .5s all;
     color:transparent;
     -webkit-text-stroke: 1px white;
     text-shadow: none;
+  }
+}
+.block:nth-child(odd){
+  h1 {
+    top:800px;
+    right:20px;
   }
 }
 header{
@@ -81,22 +82,24 @@ nav{
 }
 
 .splash {
+  transition: .5s all ease;
   font-size:60px;
    position:fixed;
    top:0;
    left:0;
    width:100%;
    height:100vh;
-   background:pink;
    color:white;
    z-index: 200;
    text-align: center;
    line-height: 90vh;
    font-family: 'Syncopate', sans-serif;
+   background: url(denden1.JPG) no-repeat 50% 50%;
+   filter: grayscale(40%);
 }
 
 .splash.display-none {  
-  transition: 0.5s all  ;
+  transition: .5s all ease;
   font-size:60px;
    position:fixed;
    opacity:0;
@@ -109,7 +112,7 @@ nav{
    z-index: -10;
    text-align: center;
    line-height: 90vh;
-   font-family: 'Syncopate', sans-serif;
+
 }
 
 @keyframes fadeIn {
