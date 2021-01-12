@@ -47,10 +47,17 @@ html, body {
   color: transparent;
   -webkit-text-stroke: 1px white;
   text-shadow: none;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 .block:nth-child(odd) h1 {
   top: 600px;
+}
+
+.block:nth-child(odd):hover {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 header {
@@ -72,6 +79,10 @@ header nav li {
 .block1 {
   background: url(DendenPic.JPG) no-repeat 50% 50%;
   background-size: cover;
+}
+
+.block1:hover {
+  content: "Hello";
 }
 
 .block2 {

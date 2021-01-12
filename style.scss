@@ -22,6 +22,7 @@ html,body {
     font-family: 'Syncopate', sans-serif;
   }
   &:hover {
+ 
     color:gray;
     filter:grayscale(0%);
     transition: .5s all;
@@ -40,12 +41,15 @@ html,body {
     color:transparent;
     -webkit-text-stroke: 1px white;
     text-shadow: none;
+    transform: translateY(50px);
   }
 }
 .block:nth-child(odd){
   h1 {
     top:600px;
-
+  }
+  &:hover {
+      transform: translateY(-50px);
   }
 }
 header{
@@ -62,9 +66,14 @@ nav{
   }
 }
 }
+
+
 .block1 {
   background: url(DendenPic.JPG) no-repeat 50% 50%;
   background-size: cover;
+  &:hover {
+    content: "Hello";
+  }
 }
 .block2 {
   background: url(nedu.jpg) no-repeat 50% 50%;
@@ -80,6 +89,7 @@ nav{
   margin-top: 300px;
   margin-left: 200px;
 }
+
 
 .splash {
   transition: .5s all ease;
