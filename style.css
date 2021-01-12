@@ -9,8 +9,8 @@ html, body {
 
 .block {
   position: relative;
-  width: 900px;
-  height: 700px;
+  width: 800px;
+  height: 600px;
   margin: 10px 600px 20px 80px;
   -webkit-transition: .5s all;
   transition: .5s all;
@@ -37,7 +37,7 @@ html, body {
 }
 
 .block:nth-child(even) h1 {
-  bottom: 800px;
+  bottom: 700px;
   left: 20px;
 }
 
@@ -50,8 +50,7 @@ html, body {
 }
 
 .block:nth-child(odd) h1 {
-  top: 800px;
-  right: 20px;
+  top: 600px;
 }
 
 header {
