@@ -76,6 +76,15 @@ header nav li {
   padding: 0 2em;
 }
 
+.entry {
+  position: relative;
+  bottom: 450px;
+}
+
+.entry h1 {
+  font-size: 90px;
+}
+
 .block1 {
   background: url(DendenPic.JPG) no-repeat 50% 50%;
   background-size: cover;
