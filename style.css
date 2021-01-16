@@ -86,6 +86,7 @@ header nav li {
 }
 
 .block1 {
+  margin-left: 300px;
   background: url(DendenPic.JPG) no-repeat 50% 50%;
   background-size: cover;
 }
