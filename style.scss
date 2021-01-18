@@ -9,6 +9,9 @@ html,body {
 }
 .block {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 800px;
   height: 600px;
   margin: 10px 600px 20px 80px;
@@ -29,9 +32,22 @@ html,body {
     transform: scale(1.05);
   }
 }
-
+.ccontent {
+  position: absolute;
+  padding-left: 1em;
+}
+.card img{
+  position:absolute;
+  bottom:0;
+  width:300px;
+  left:50%;
+  transform: translateX(50%);
+  transition: 0.3s all;
+}
+.card:hover img {
+left:70%;
+}
 .block:nth-child(even){
-  
   h1 {
     bottom:700px;
     left:20px;
@@ -46,14 +62,13 @@ html,body {
 }
 .block:nth-child(odd){
   h1 {
-    top:600px;
+    top:500px;
   }
   &:hover {
       transform: translateY(-50px);
   }
 }
 header{
-
 padding:1em;
 nav{
   text-align: center;
