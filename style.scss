@@ -8,6 +8,7 @@ html,body {
   background: #f4a261;
 }
 .block {
+  border-radius: 10px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -62,7 +63,7 @@ left:70%;
 }
 .block:nth-child(odd){
   h1 {
-    top:500px;
+    top:600px;
   }
   &:hover {
       transform: translateY(-50px);
