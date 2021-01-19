@@ -237,7 +237,7 @@ header nav li {
 
 @media screen and (max-width: 550px) {
   .block {
-    width: 5 00px;
+    width: 500px;
     height: 350px;
   }
   .block:nth-child(even) h1 {
@@ -246,8 +246,24 @@ header nav li {
   .block:nth-child(odd) h1 {
     top: 400px;
   }
+  .block:nth-child(odd) {
+    bottom: 10em;
+  }
   .entry h1 {
     font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block {
+    width: 400px;
+    height: 300px;
+  }
+  .block:nth-child(even) h1 {
+    bottom: 300px;
+  }
+  .block:nth-child(odd) h1 {
+    top: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
