@@ -24,8 +24,6 @@ html, body {
   margin: 10px 600px 20px 80px;
   -webkit-transition: .5s all;
   transition: .5s all;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   color: white;
 }
 
@@ -38,8 +36,8 @@ html, body {
 
 .block:hover {
   color: gray;
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   -webkit-transition: .5s all;
   transition: .5s all;
   -webkit-transform: scale(1.05);
@@ -48,7 +46,32 @@ html, body {
 
 .ccontent {
   position: absolute;
-  padding-left: 1em;
+  padding-left: 2em;
+  padding-top: 1em;
+  color: black;
+  -webkit-text-stroke: initial;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5 all;
+  transition: .5 all;
+}
+
+.ccontent h2 {
+  display: block;
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.ccontent p {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+
+.card:hover .ccontent {
+  opacity: 1;
+  visibility: visible;
 }
 
 .card img {
@@ -60,10 +83,14 @@ html, body {
           transform: translateX(50%);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .card:hover img {
   left: 70%;
+  opacity: 1;
+  visibility: visible;
 }
 
 .block:nth-child(even) h1 {
