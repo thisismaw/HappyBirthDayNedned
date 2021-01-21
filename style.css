@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -254,9 +255,9 @@ header nav li {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .block {
-    width: 400px;
+    width: 500px;
     height: 300px;
   }
   .block:nth-child(even) h1 {
@@ -264,6 +265,14 @@ header nav li {
   }
   .block:nth-child(odd) h1 {
     top: 300px;
+  }
+  .block:hover:nth-child(even) {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  .block:hover:nth-child(odd) {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   .container {
     max-width: 100%;
