@@ -73,7 +73,7 @@ body {
   bottom: 0;
   width: 300px;
   left: 50%;
-  transform: translateX(50%);
+  transform: translateX(15px);
   transition: 0.3s all;
   opacity: 0;
   visibility: hidden;
@@ -246,9 +246,16 @@ header {
 }
 
 @media screen and (max-width:450px) {
+  .entry h1 {
+    font-size: 20px;
+  }
   .block {
     width: 500px;
     height: 300px;
+    margin: 200px 50px 20px 0px;
+    h1 {
+      font-size:20px  
+    }
   }
 
   .block:nth-child(even) h1 {
@@ -269,8 +276,12 @@ header {
 
   .container {
     max-width: 100%;
-    margin-top: 200px;
-    margin-left: 200px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .card img {
+    width:200px;
   }
 
 }
