@@ -38,8 +38,8 @@ body {
 
 .block:hover {
   color: gray;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
   -webkit-transition: .5s all;
   transition: .5s all;
   -webkit-transform: scale(1.05);
@@ -63,12 +63,14 @@ body {
   color: #fff;
   font-size: 3em;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
 }
 
 .ccontent p {
   display: inline-block;
   position: relative;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 .card:hover .ccontent {
@@ -151,7 +153,7 @@ header nav li {
 }
 
 .block1:hover {
-  content: "Hello";
+  background-filter: blur(1px);
 }
 
 .block2 {
@@ -238,6 +240,12 @@ header nav li {
 }
 
 @media screen and (max-width: 550px) {
+  .ccontent h2 {
+    font-size: 1.25em;
+  }
+  .ccontent p {
+    font-size: 1em;
+  }
   .block {
     width: 500px;
     height: 350px;
@@ -257,15 +265,15 @@ header nav li {
 }
 
 @media screen and (max-width: 450px) {
-  .entry h1 {
-    font-size: 20px;
-  }
   .block {
     width: 500px;
     height: 300px;
-    margin: 200px 50px 20px 0px;
+    margin: 200px 65px 20px 0px;
   }
   .block h1 {
+    font-size: 30px;
+  }
+  .entry h1 {
     font-size: 20px;
   }
   .block:nth-child(even) h1 {

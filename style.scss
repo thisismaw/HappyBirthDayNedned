@@ -31,9 +31,8 @@ body {
   }
 
   &:hover {
-
     color: gray;
-    filter: grayscale(100%);
+    filter: grayscale(90%);
     transition: .5s all;
     transform: scale(1.05);
   }
@@ -54,12 +53,16 @@ body {
     color: #fff;
     font-size: 3em;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
   }
 
   p {
     display: inline-block;
     position: relative;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
+
   }
 }
 
@@ -141,7 +144,7 @@ header {
   background-size: cover;
 
   &:hover {
-    content: "Hello";
+    background-filter: blur(1px);
   }
 }
 
@@ -223,6 +226,12 @@ header {
 }
 
 @media screen and (max-width:550px) {
+  .ccontent h2 {
+    font-size:1.25em;
+  }
+  .ccontent p {
+    font-size: 1em;
+  }
   .block {
     width: 500px;
     height: 350px;
@@ -246,16 +255,17 @@ header {
 }
 
 @media screen and (max-width:450px) {
-  .entry h1 {
-    font-size: 20px;
-  }
+
   .block {
     width: 500px;
     height: 300px;
-    margin: 200px 50px 20px 0px;
+    margin: 200px 65px 20px 0px;
     h1 {
-      font-size:20px  
+      font-size:30px  
     }
+  }
+  .entry h1 {
+    font-size: 20px;
   }
 
   .block:nth-child(even) h1 {
