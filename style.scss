@@ -47,6 +47,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: .5 all;
+  backdrop-filter: blur(2px);
 
   h2 {
     display: block;
@@ -63,6 +64,9 @@ body {
     color: #fff;
     font-family: 'Raleway', sans-serif;
 
+  }
+  &:hover {
+    backdrop-filter: blur(5px);
   }
 }
 
@@ -142,9 +146,10 @@ header {
   margin-left: 300px;
   background: url(DendenPic.JPG) no-repeat 50% 50%;
   background-size: cover;
-
+  transition:.5s all;
   &:hover {
-    background-filter: blur(1px);
+    transition:.5s all;
+    backdrop-filter: blur(5px);
   }
 }
 
@@ -235,6 +240,7 @@ header {
   .block {
     width: 500px;
     height: 350px;
+    margin: 200px 65px 20px 0px;
   }
 
   .block:nth-child(even) h1 {
@@ -252,14 +258,38 @@ header {
   .entry h1 {
     font-size: 75px;
   }
+  
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:500px)
+{
+ 
+  .block:nth-child(odd) h1 {
+    top: 400px;
+}
+  .container {
+    margin-top:100px;  
+    margin-left: 10px;
+  }
+  .block {
+    margin: 200px 250px 20px 0px;
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .block:nth-child(odd) {
+    bottom: 12em;
+  }
+  .entry h1 {
+    font-size:25px;
+  }
+}
+@media screen and (max-width:400px) {
 
   .block {
     width: 500px;
     height: 300px;
-    margin: 200px 65px 20px 0px;
+    margin: 200px 70px 20px 0px;
     h1 {
       font-size:30px  
     }
