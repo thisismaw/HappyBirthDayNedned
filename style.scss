@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #f4a261;
+  background: #151515;
 }
 
 .block {
@@ -103,7 +103,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px white;
     text-shadow: none;
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
 }
 
@@ -113,7 +113,7 @@ body {
   }
 
   &:hover {
-    transform: translateY(-50px);
+    transform: translateY(-60px);
   }
 }
 
@@ -163,6 +163,10 @@ header {
   background-size: cover;
 }
 
+.block4 {
+  background: url(denden1.JPG) no-repeat 50% 50%;
+  background-size: cover;
+}
 .container {
   max-width: 100%;
   margin-top: 300px;
@@ -216,17 +220,41 @@ header {
 }
 
 @media screen and (max-width:768px) {
+
+  .container {
+    margin-top:150px;  
+    margin-left: 5px;
+  }
   .block {
     width: 700px;
-    height: 500px;
+    height: 400px;
+    margin: 20px 65px 20px 10px;
+    h1 {
+      font-size: 3em;
+    }
   }
 
   .block:nth-child(even) h1 {
-    bottom: 550px;
+    bottom: -300px;
+    &:hover {
+      transform: translateY(-610px);
+    }
   }
 
   .block:nth-child(odd) h1 {
-    top: 550px;
+    top: 700px;
+    left: 50px;
+    &:hover {
+      transform: translateY(-610px);
+    }
+  }
+
+  .entry {
+    position: relative;    
+  }
+  .entry h1 {
+    position:absolute;
+    font-size: 2.5em;
   }
 }
 
