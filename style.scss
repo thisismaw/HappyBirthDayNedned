@@ -59,6 +59,7 @@ body {
   }
 
   p {
+    font-size:1.5em
     display: inline-block;
     position: relative;
     color: #fff;
@@ -236,17 +237,12 @@ header {
 
   .block:nth-child(even) h1 {
     bottom: -300px;
-    &:hover {
-      transform: translateY(-610px);
-    }
   }
 
   .block:nth-child(odd) h1 {
     top: 700px;
     left: 50px;
-    &:hover {
-      transform: translateY(-610px);
-    }
+
   }
 
   .entry {
